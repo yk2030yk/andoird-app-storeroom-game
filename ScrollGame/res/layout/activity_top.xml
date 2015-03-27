@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backtop"
+    tools:context=".GameActivity" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+        
+    	<Button
+        	android:id="@+id/button_start"
+        	android:layout_width="wrap_content"
+        	android:layout_height="80dp"
+        	android:background="@drawable/custom_button" />
+    	
+    	<View 
+    	    android:layout_width="1dp"
+        	android:layout_height="10dp"/>
+
+    	<Button
+        	android:id="@+id/button_select"
+        	android:layout_width="wrap_content"
+        	android:layout_height="80dp"
+        	android:background="@drawable/custom_button2"  />
+    	
+    	<View 
+    	    android:layout_width="1dp"
+        	android:layout_height="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
