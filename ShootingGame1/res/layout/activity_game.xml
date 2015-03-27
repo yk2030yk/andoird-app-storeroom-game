@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <com.example.shootinggame.GameView
+        android:id="@+id/myView1"
+        android:layout_width="fill_parent"
+        android:layout_height="400dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e6e6fa"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:text="L"
+            android:textColor="#f0f0f0"
+            android:background="@drawable/button_shape" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Jump"
+                android:textColor="#f0f0f0"
+                android:background="@drawable/button_shape" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+
+            <Button
+                android:id="@+id/beam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Attack"
+                android:textColor="#f0f0f0"
+                android:background="@drawable/button_shape" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:text="R"
+            android:textColor="#f0f0f0"
+            android:background="@drawable/button_shape" />
+    </LinearLayout>
+
+</LinearLayout>
